@@ -1,0 +1,15 @@
+//
+//  VoiceAnimals-Prefix.pch
+//  VoiceAnimals
+//
+//  Created by Than Dang on 5/27/15.
+//  Copyright (c) 2015 Than Dang. All rights reserved.
+//
+
+#ifndef VoiceAnimals_VoiceAnimals_Prefix_pch
+#define VoiceAnimals_VoiceAnimals_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

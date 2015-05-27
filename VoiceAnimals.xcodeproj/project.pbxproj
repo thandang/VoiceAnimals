@@ -14,6 +14,9 @@
 		36353CEB1B162507005DEF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36353CEA1B162507005DEF4F /* Images.xcassets */; };
 		36353CEE1B162507005DEF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36353CEC1B162507005DEF4F /* LaunchScreen.xib */; };
 		36353CFA1B162507005DEF4F /* VoiceAnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */; };
+		367279681B162CB90003B81C /* VAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 367279671B162CB90003B81C /* VAUtils.m */; };
+		3672796B1B162CE10003B81C /* VACommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3672796A1B162CE10003B81C /* VACommonViewController.m */; };
+		3672796F1B162D410003B81C /* VAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3672796E1B162D410003B81C /* VAMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		36353CF31B162507005DEF4F /* VoiceAnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36353CF81B162507005DEF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceAnimalsTests.m; sourceTree = "<group>"; };
+		367279661B162CB90003B81C /* VAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAUtils.h; path = Utils/VAUtils.h; sourceTree = "<group>"; };
+		367279671B162CB90003B81C /* VAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VAUtils.m; path = Utils/VAUtils.m; sourceTree = "<group>"; };
+		367279691B162CE10003B81C /* VACommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VACommonViewController.h; sourceTree = "<group>"; };
+		3672796A1B162CE10003B81C /* VACommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VACommonViewController.m; sourceTree = "<group>"; };
+		3672796C1B162CFF0003B81C /* VoiceAnimals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceAnimals-Prefix.pch"; sourceTree = "<group>"; };
+		3672796D1B162D410003B81C /* VAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAMainViewController.h; path = ViewControllers/VAMainViewController.h; sourceTree = "<group>"; };
+		3672796E1B162D410003B81C /* VAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VAMainViewController.m; path = ViewControllers/VAMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,12 @@
 		36353CDC1B162507005DEF4F /* VoiceAnimals */ = {
 			isa = PBXGroup;
 			children = (
+				367279651B162C910003B81C /* Resources */,
+				367279641B162C810003B81C /* Models */,
+				367279631B162C760003B81C /* ThirdParties */,
+				367279621B162C6F0003B81C /* Utils */,
+				367279611B162C690003B81C /* Components */,
+				367279601B162C600003B81C /* ViewControllers */,
 				36353CE11B162507005DEF4F /* AppDelegate.h */,
 				36353CE21B162507005DEF4F /* AppDelegate.m */,
 				36353CE41B162507005DEF4F /* ViewController.h */,
@@ -98,6 +114,7 @@
 			children = (
 				36353CDE1B162507005DEF4F /* Info.plist */,
 				36353CDF1B162507005DEF4F /* main.m */,
+				3672796C1B162CFF0003B81C /* VoiceAnimals-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +134,54 @@
 				36353CF81B162507005DEF4F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		367279601B162C600003B81C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3672796D1B162D410003B81C /* VAMainViewController.h */,
+				3672796E1B162D410003B81C /* VAMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		367279611B162C690003B81C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				367279691B162CE10003B81C /* VACommonViewController.h */,
+				3672796A1B162CE10003B81C /* VACommonViewController.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		367279621B162C6F0003B81C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				367279661B162CB90003B81C /* VAUtils.h */,
+				367279671B162CB90003B81C /* VAUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		367279631B162C760003B81C /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParties;
+			sourceTree = "<group>";
+		};
+		367279641B162C810003B81C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		367279651B162C910003B81C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +228,7 @@
 		36353CD21B162507005DEF4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VA;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Than Dang";
 				TargetAttributes = {
@@ -219,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3672796F1B162D410003B81C /* VAMainViewController.m in Sources */,
+				367279681B162CB90003B81C /* VAUtils.m in Sources */,
+				3672796B1B162CE10003B81C /* VACommonViewController.m in Sources */,
 				36353CE61B162507005DEF4F /* ViewController.m in Sources */,
 				36353CE31B162507005DEF4F /* AppDelegate.m in Sources */,
 				36353CE01B162507005DEF4F /* main.m in Sources */,
@@ -349,7 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "VoiceAnimals/VoiceAnimals-Prefix.pch";
 				INFOPLIST_FILE = VoiceAnimals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "VoiceAnimals/VoiceAnimals-Prefix.pch";
 				INFOPLIST_FILE = VoiceAnimals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +493,7 @@
 				36353CFF1B162507005DEF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36353D001B162507005DEF4F /* Build configuration list for PBXNativeTarget "VoiceAnimalsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +502,7 @@
 				36353D021B162507005DEF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
