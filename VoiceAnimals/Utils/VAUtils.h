@@ -10,4 +10,6 @@
 
 @interface VAUtils : NSObject
 
++ (CGRect) getMainScreenBounds;
+
 @end

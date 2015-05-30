@@ -117,7 +117,7 @@ static void completionCallback (SystemSoundID sound, void *myself) {
 }
 
 - (void)configureAudioPlayer:(NSString *)soundName {
-    NSString *backgroundMusicPath = [[NSBundle mainBundle] pathForResource:soundName ofType:@"aiff"];
+    NSString *backgroundMusicPath = [[NSBundle mainBundle] pathForResource:soundName ofType:kType];
     
     NSURL *backgroundMusicURL = [NSURL fileURLWithPath:backgroundMusicPath];
     if (_backgroundMusicPlayer) {
@@ -129,7 +129,7 @@ static void completionCallback (SystemSoundID sound, void *myself) {
 }
 
 - (void)configureSystemSound:(NSString *)soundName {
-    NSString *pewPewPath = [[NSBundle mainBundle] pathForResource:soundName ofType:@"aiff"];
+    NSString *pewPewPath = [[NSBundle mainBundle] pathForResource:soundName ofType:kType];
     NSURL *pewPewURL = [NSURL fileURLWithPath:pewPewPath];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)pewPewURL, &_soundId);
 }

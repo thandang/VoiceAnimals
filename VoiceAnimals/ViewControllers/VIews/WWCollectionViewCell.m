@@ -7,7 +7,7 @@
 //
 
 #import "WWCollectionViewCell.h"
-#import "WWPhoto.h"
+//#import "WWPhoto.h"
 
 @interface WWCollectionViewCell() {
     __weak UIImageView  *_img;
@@ -39,13 +39,13 @@
     return self;
 }
 
-- (void) configPhoto:(WWPhoto *)photo {
-    if (photo.name) {
-        _lblName.text = photo.name;
-        UIImage *image = [WWUtils imageWithName:photo.name];
-        [_img setImage:image];
-        photo.image = image;
-    }
-}
+//- (void) configPhoto:(WWPhoto *)photo {
+//    if (photo.name) {
+//        _lblName.text = photo.name;
+//        UIImage *image = [WWUtils imageWithName:photo.name];
+//        [_img setImage:image];
+//        photo.image = image;
+//    }
+//}
 
 @end

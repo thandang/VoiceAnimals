@@ -11,15 +11,11 @@
 #import "FancyTabBar.h"
 #import "UIView+Screenshot.h"
 #import "UIImage+ImageEffects.h"
+#import "EMAudioController.h"
+#import "BFPaperButton.h"
+#import "FAKFontAwesome.h"
 
-#define kChim   @"tieng_chim_keu"
-#define kBo     @"tieng_bo_keu"
-#define kDe     @"tieng_de_keu"
-#define kCho    @"tieng_cho_keu"
-#define kEch    @"tieng_ech_keu"
-#define kMeo    @"tieng_meo_keu"
 
-#define kType   @"mp3"
 
 @interface VAMainViewController () <ADBannerViewDelegate, FancyTabBarDelegate> {
     UIView *_viewInfo;
@@ -28,10 +24,14 @@
     
     FancyTabBar *_fancyTabBar;
     
-    UIImageView *_backgroundImageView;
+    __weak UIImageView *_backgroundImageView;
+    
+    __weak UILabel *_lblStop;
+    __weak BFPaperButton   *_btnStop;
+    BOOL    _isPlaying;
 }
 
-@property (nonatomic,strong) UIImageView *backgroundView;
+@property (nonatomic, strong) UIImageView *backgroundView;
 
 @end
 
@@ -49,16 +49,43 @@
 
 - (void) loadView {
     [super loadView];
+    CGRect mainFrame = [VAUtils getMainScreenBounds];
+//    self.view = [[UIView alloc] initWithFrame:mainFrame];
+    [self.navigationController setNavigationBarHidden:YES];
     
     if (!_backgroundImageView) {
-        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, mainFrame.size.width, mainFrame.size.height)];
         //TODO setup image scale
+        img.contentMode = UIViewContentModeScaleAspectFit;
         [self.view addSubview:img];
         _backgroundImageView = img;
     }
+    [_backgroundImageView setImage:[UIImage imageNamed:@"tieng_bo_keu"]];
+    [self.view bringSubviewToFront:_backgroundImageView];
+    
+    if (!_lblStop) {
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 50.0, 20.0, 40.0, 40.0)];
+        lbl.layer.cornerRadius = 20.0;
+        lbl.textAlignment = NSTextAlignmentCenter;
+        lbl.textColor = kCOLOR_BACKGROUND;
+        FAKFontAwesome *font = [FAKFontAwesome pauseIconWithSize:40.0];
+        lbl.attributedText = [font attributedString];
+        [self.view addSubview:lbl];
+        _lblStop = lbl;
+    }
+
+    if (!_btnStop) {
+        BFPaperButton *btn = [[BFPaperButton alloc] initFlatWithFrame:_lblStop.frame];
+        [btn setTitle:@"" forState:UIControlStateNormal];
+        [btn setBackgroundColor:[UIColor clearColor]];
+        btn.layer.cornerRadius = 20.0;
+        [btn addTarget:self action:@selector(stopAllPlay) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn];
+        _btnStop = btn;
+    }
     
     _fancyTabBar = [[FancyTabBar alloc]initWithFrame:self.view.bounds];
-    [_fancyTabBar setUpChoices:self choices:@[@"New", @"Camera"] withMainButtonImage:[UIImage imageNamed:@"main_button"]];
+    [_fancyTabBar setUpChoices:self choices:@[kBo, kChim, kCho, kDe, kEch, kMeo] withMainButtonImage:[UIImage imageNamed:@"main_button"]];
     _fancyTabBar.delegate = self;
     [self.view addSubview:_fancyTabBar];
 }
@@ -69,6 +96,28 @@
     [_banner setDelegate:self];
 }
 
+
+#pragma mark - Play
+- (void) startPlayingWithSoundName:(NSString *)soundName {
+    [[EMAudioController shareInstance] stopPlaying];
+    [[EMAudioController shareInstance] configWithSoundName:soundName];
+    [[EMAudioController shareInstance] playAsMusicPlayer];
+}
+
+- (void) stopAllPlay {
+    FAKFontAwesome *font = nil;
+    if (_isPlaying) {
+        font = [FAKFontAwesome playIconWithSize:40.0];
+        _isPlaying = NO;
+        [[EMAudioController shareInstance] stopPlaying];
+    } else {
+        font = [FAKFontAwesome pauseIconWithSize:40.0];
+        [[EMAudioController shareInstance] playAsMusicPlayer];
+        _isPlaying = YES;
+    }
+    _lblStop.attributedText = [font attributedString];
+    
+}
 
 #pragma mark - FancyTabBarDelegate
 - (void) didCollapse{

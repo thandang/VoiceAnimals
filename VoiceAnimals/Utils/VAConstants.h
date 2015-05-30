@@ -72,13 +72,14 @@
 #define kMediumItalicFont [UIFont fontWithName:@"NeoSansStd-LightItalic" size:17.0]
 
 
-#define kPhotoId    @"photoId"
-#define kName       @"name"
-#define kDateSave   @"date_saved"
-#define kPhotoTable  @"photo"
-#define kLatitude   @"latitude"
-#define kLongitude  @"longitude"
-#define kNotes      @"notes"
+#define kChim   @"tieng_chim_keu"
+#define kBo     @"tieng_bo_keu"
+#define kDe     @"tieng_de_keu"
+#define kCho    @"tieng_cho_keu"
+#define kEch    @"tieng_ech_keu"
+#define kMeo    @"tieng_meo_keu"
+
+#define kType   @"mp3"
 
 
 #define kTagCustomCell  117

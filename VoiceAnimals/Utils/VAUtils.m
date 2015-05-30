@@ -10,4 +10,8 @@
 
 @implementation VAUtils
 
++ (CGRect) getMainScreenBounds {
+    return [UIScreen mainScreen].bounds;
+}
+
 @end
