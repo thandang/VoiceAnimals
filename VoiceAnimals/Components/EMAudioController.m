@@ -38,7 +38,7 @@
     self = [super init];
     if (self) {
         _isRepeat = YES;
-        [self configureAudioSession];
+//        [self configureAudioSession];
     }
     return self;
 }
@@ -49,23 +49,11 @@
 }
 
 - (void) stopPlaying {
-    if (kPlayByMusic) {
-        [self.backgroundMusicPlayer stop];
-    } else {
-        AudioServicesRemoveSystemSoundCompletion(self.soundId);
-        AudioServicesDisposeSystemSoundID(self.soundId);
+    [self.backgroundMusicPlayer stop];
 
-        if (self.delegate && [self.delegate respondsToSelector:@selector(audioDidStopPlaying)]) {
-            [self.delegate audioDidStopPlaying];
-        }
-    }
 }
 
 - (void) playAsMusicPlayer {
-    // If background music or other music is already playing, nothing more to do here
-    if (self.backgroundMusicPlaying || [self.audioSession isOtherAudioPlaying]) {
-        return;
-    }
     [self.backgroundMusicPlayer prepareToPlay];
     [self.backgroundMusicPlayer play];
     self.backgroundMusicPlaying = YES;

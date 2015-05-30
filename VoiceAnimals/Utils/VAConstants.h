@@ -79,6 +79,14 @@
 #define kEch    @"tieng_ech_keu"
 #define kMeo    @"tieng_meo_keu"
 
+
+#define kSortedChim @"chim-40"
+#define kSortedMeo  @"meo-40"
+#define kSortedCho  @"cho-40"
+#define kSortedEch     @"ech-40"
+#define kSortedDe   @"de-40"
+#define kSortedBo   @"bo-40"
+
 #define kType   @"mp3"
 
 

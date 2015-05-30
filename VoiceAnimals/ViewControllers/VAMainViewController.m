@@ -29,6 +29,9 @@
     __weak UILabel *_lblStop;
     __weak BFPaperButton   *_btnStop;
     BOOL    _isPlaying;
+    
+    UILabel *_lblDescript;
+    UILabel *_lblName;
 }
 
 @property (nonatomic, strong) UIImageView *backgroundView;
@@ -50,21 +53,44 @@
 - (void) loadView {
     [super loadView];
     CGRect mainFrame = [VAUtils getMainScreenBounds];
-//    self.view = [[UIView alloc] initWithFrame:mainFrame];
     [self.navigationController setNavigationBarHidden:YES];
     
     if (!_backgroundImageView) {
         UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, mainFrame.size.width, mainFrame.size.height)];
-        //TODO setup image scale
         img.contentMode = UIViewContentModeScaleAspectFit;
         [self.view addSubview:img];
         _backgroundImageView = img;
     }
-    [_backgroundImageView setImage:[UIImage imageNamed:@"tieng_bo_keu"]];
+    [_backgroundImageView setImage:[UIImage imageNamed:@"tieng_chim_keu"]];
     [self.view bringSubviewToFront:_backgroundImageView];
     
+    [[EMAudioController shareInstance] configWithSoundName:kChim];
+    [[EMAudioController shareInstance] playAsMusicPlayer];
+    _isPlaying = YES;
+    
+    
+    if (!_lblDescript) {
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 50.0, self.view.frame.size.width - 20, 40.0)];
+        lbl.textAlignment = NSTextAlignmentCenter;
+        lbl.text = @"ANIMALS SPEAKING";
+        lbl.font = kBigFont;
+        lbl.textColor = kCOLOR_BACKGROUND;
+        [self.view addSubview:lbl];
+        _lblDescript = lbl;
+    }
+    
+    if (!_lblName) {
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 90.0, self.view.frame.size.width - 20, 21.0)];
+        lbl.textAlignment = NSTextAlignmentCenter;
+        lbl.font = kTimeFont;
+        lbl.textColor = kCOLOR_BACKGROUND;
+        [self.view addSubview:lbl];
+        _lblName = lbl;
+    }
+    _lblName.text = @"Bird's voice";
+    
     if (!_lblStop) {
-        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 50.0, 20.0, 40.0, 40.0)];
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 40.0) / 2, (self.view.frame.size.height - 40) / 2 - 50, 40.0, 40.0)];
         lbl.layer.cornerRadius = 20.0;
         lbl.textAlignment = NSTextAlignmentCenter;
         lbl.textColor = kCOLOR_BACKGROUND;
@@ -85,9 +111,15 @@
     }
     
     _fancyTabBar = [[FancyTabBar alloc]initWithFrame:self.view.bounds];
-    [_fancyTabBar setUpChoices:self choices:@[kBo, kChim, kCho, kDe, kEch, kMeo] withMainButtonImage:[UIImage imageNamed:@"main_button"]];
+    [_fancyTabBar setUpChoices:self choices:@[kSortedChim, kSortedBo, kSortedCho, kSortedDe, kSortedEch, kSortedMeo] withMainButtonImage:[UIImage imageNamed:@"main_button"]];
     _fancyTabBar.delegate = self;
     [self.view addSubview:_fancyTabBar];
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopAllPlay) name:@"TogglePlayPause" object:nil];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -99,6 +131,7 @@
 
 #pragma mark - Play
 - (void) startPlayingWithSoundName:(NSString *)soundName {
+    [_backgroundImageView setImage:[UIImage imageNamed:soundName]];
     [[EMAudioController shareInstance] stopPlaying];
     [[EMAudioController shareInstance] configWithSoundName:soundName];
     [[EMAudioController shareInstance] playAsMusicPlayer];
@@ -154,16 +187,26 @@
 - (void)optionsButton:(UIButton*)optionButton didSelectItem:(int)index{
     if (index == 1) {
         DEBUG_LOG(@"1");
+        _lblName.text = @"Bird's voice";
+        [self startPlayingWithSoundName:kChim];
     } else if (index == 2) {
-        UIAlertView *alr = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This feature are currently develop. \nComming soon" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alr show];
+        _lblName.text = @"Cow's voice";
+        [self startPlayingWithSoundName:kBo];
     } else if (index == 3) {
+        _lblName.text = @"Dog's voice";
+        [self startPlayingWithSoundName:kCho];
         DEBUG_LOG(@"3");
     } else if (index == 4) {
+        _lblName.text = @"Cricket's voice";
+        [self startPlayingWithSoundName:kDe];
         DEBUG_LOG(@"4");
     } else if (index == 5) {
+        _lblName.text = @"Frog's voice";
+        [self startPlayingWithSoundName:kEch];
         DEBUG_LOG(@"5");
     } else if (index == 6) {
+        _lblName.text = @"Cat's voice";
+        [self startPlayingWithSoundName:kMeo];
         DEBUG_LOG(@"6");
     }
 }
