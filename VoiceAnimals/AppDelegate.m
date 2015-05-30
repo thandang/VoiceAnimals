@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface AppDelegate ()
 
@@ -28,6 +30,22 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    UInt32 size = sizeof(CFStringRef);
+    CFStringRef route;
+    AudioSessionGetProperty(kAudioSessionProperty_AudioRoute, &size, &route);
+    NSLog(@"route = %@", route);
+    
+    NSString *routeString=[NSString stringWithFormat:@"%@",route];
+    if([routeString isEqualToString:@"HeadsetBT"]){
+        UInt32 allowBluetoothInput = 1;
+        AudioSessionSetProperty (kAudioSessionProperty_OverrideCategoryEnableBluetoothInput,sizeof (allowBluetoothInput),&allowBluetoothInput);
+    }
+    [self becomeFirstResponder];
+    
+    
+    [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:NULL];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -44,6 +62,30 @@
 
 - (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)theEvent {
+    if (theEvent.type == UIEventTypeRemoteControl)  {
+        switch(theEvent.subtype)        {
+            case UIEventSubtypeRemoteControlPlay:
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"TogglePlayPause" object:nil];
+                break;
+            case UIEventSubtypeRemoteControlPause:
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"TogglePlayPause" object:nil];
+                break;
+            case UIEventSubtypeRemoteControlStop:
+                break;
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"TogglePlayPause" object:nil];
+                break;
+            default:
+                return;
+        }
+    }
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
 }
 
 @end

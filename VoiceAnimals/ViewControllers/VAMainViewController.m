@@ -12,6 +12,14 @@
 #import "UIView+Screenshot.h"
 #import "UIImage+ImageEffects.h"
 
+#define kChim   @"tieng_chim_keu"
+#define kBo     @"tieng_bo_keu"
+#define kDe     @"tieng_de_keu"
+#define kCho    @"tieng_cho_keu"
+#define kEch    @"tieng_ech_keu"
+#define kMeo    @"tieng_meo_keu"
+
+#define kType   @"mp3"
 
 @interface VAMainViewController () <ADBannerViewDelegate, FancyTabBarDelegate> {
     UIView *_viewInfo;
@@ -19,6 +27,8 @@
     BOOL            _bannerVisible;
     
     FancyTabBar *_fancyTabBar;
+    
+    UIImageView *_backgroundImageView;
 }
 
 @property (nonatomic,strong) UIImageView *backgroundView;
@@ -39,6 +49,13 @@
 
 - (void) loadView {
     [super loadView];
+    
+    if (!_backgroundImageView) {
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
+        //TODO setup image scale
+        [self.view addSubview:img];
+        _backgroundImageView = img;
+    }
     
     _fancyTabBar = [[FancyTabBar alloc]initWithFrame:self.view.bounds];
     [_fancyTabBar setUpChoices:self choices:@[@"New", @"Camera"] withMainButtonImage:[UIImage imageNamed:@"main_button"]];
@@ -87,10 +104,18 @@
 
 - (void)optionsButton:(UIButton*)optionButton didSelectItem:(int)index{
     if (index == 1) {
-
+        DEBUG_LOG(@"1");
     } else if (index == 2) {
         UIAlertView *alr = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This feature are currently develop. \nComming soon" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alr show];
+    } else if (index == 3) {
+        DEBUG_LOG(@"3");
+    } else if (index == 4) {
+        DEBUG_LOG(@"4");
+    } else if (index == 5) {
+        DEBUG_LOG(@"5");
+    } else if (index == 6) {
+        DEBUG_LOG(@"6");
     }
 }
 

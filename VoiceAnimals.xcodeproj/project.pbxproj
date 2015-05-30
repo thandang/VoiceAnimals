@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		36353CE01B162507005DEF4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CDF1B162507005DEF4F /* main.m */; };
 		36353CE31B162507005DEF4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CE21B162507005DEF4F /* AppDelegate.m */; };
-		36353CE61B162507005DEF4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CE51B162507005DEF4F /* ViewController.m */; };
 		36353CE91B162507005DEF4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36353CE71B162507005DEF4F /* Main.storyboard */; };
 		36353CEB1B162507005DEF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36353CEA1B162507005DEF4F /* Images.xcassets */; };
 		36353CEE1B162507005DEF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36353CEC1B162507005DEF4F /* LaunchScreen.xib */; };
 		36353CFA1B162507005DEF4F /* VoiceAnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */; };
+		364D3EDF1B19C2A500BB7801 /* EECollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D3EDC1B19C2A500BB7801 /* EECollectionFlowLayout.m */; };
+		364D3EE01B19C2A500BB7801 /* WWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D3EDE1B19C2A500BB7801 /* WWCollectionViewCell.m */; };
+		364D3EE31B19C41400BB7801 /* VACollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D3EE21B19C41400BB7801 /* VACollectionView.m */; };
+		364D3EE51B19C4C800BB7801 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D3EE41B19C4C800BB7801 /* AudioToolbox.framework */; };
+		364D3EE71B19C4D400BB7801 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D3EE61B19C4D400BB7801 /* SystemConfiguration.framework */; };
+		364D3EED1B19C54F00BB7801 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D3EEC1B19C54F00BB7801 /* UIView+Animation.m */; };
+		364D3EF01B19C8DC00BB7801 /* EMAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D3EEF1B19C8DC00BB7801 /* EMAudioController.m */; };
 		367279681B162CB90003B81C /* VAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 367279671B162CB90003B81C /* VAUtils.m */; };
 		3672796F1B162D410003B81C /* VAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3672796E1B162D410003B81C /* VAMainViewController.m */; };
 		36CCD94C1B197B1D009D7D46 /* VACommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD94B1B197B1D009D7D46 /* VACommonViewController.m */; };
@@ -79,14 +85,24 @@
 		36353CDF1B162507005DEF4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36353CE11B162507005DEF4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36353CE21B162507005DEF4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		36353CE41B162507005DEF4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		36353CE51B162507005DEF4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36353CE81B162507005DEF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36353CEA1B162507005DEF4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36353CED1B162507005DEF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		36353CF31B162507005DEF4F /* VoiceAnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36353CF81B162507005DEF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceAnimalsTests.m; sourceTree = "<group>"; };
+		364D3EDB1B19C2A500BB7801 /* EECollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EECollectionFlowLayout.h; path = ViewControllers/VIews/EECollectionFlowLayout.h; sourceTree = "<group>"; };
+		364D3EDC1B19C2A500BB7801 /* EECollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EECollectionFlowLayout.m; path = ViewControllers/VIews/EECollectionFlowLayout.m; sourceTree = "<group>"; };
+		364D3EDD1B19C2A500BB7801 /* WWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWCollectionViewCell.h; path = ViewControllers/VIews/WWCollectionViewCell.h; sourceTree = "<group>"; };
+		364D3EDE1B19C2A500BB7801 /* WWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWCollectionViewCell.m; path = ViewControllers/VIews/WWCollectionViewCell.m; sourceTree = "<group>"; };
+		364D3EE11B19C41400BB7801 /* VACollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VACollectionView.h; path = ViewControllers/VIews/VACollectionView.h; sourceTree = "<group>"; };
+		364D3EE21B19C41400BB7801 /* VACollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VACollectionView.m; path = ViewControllers/VIews/VACollectionView.m; sourceTree = "<group>"; };
+		364D3EE41B19C4C800BB7801 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		364D3EE61B19C4D400BB7801 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		364D3EEB1B19C54F00BB7801 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animation.h"; path = "Utils/UIView+Animation.h"; sourceTree = "<group>"; };
+		364D3EEC1B19C54F00BB7801 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animation.m"; path = "Utils/UIView+Animation.m"; sourceTree = "<group>"; };
+		364D3EEE1B19C8DC00BB7801 /* EMAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMAudioController.h; path = Components/EMAudioController.h; sourceTree = "<group>"; };
+		364D3EEF1B19C8DC00BB7801 /* EMAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMAudioController.m; path = Components/EMAudioController.m; sourceTree = "<group>"; };
 		367279661B162CB90003B81C /* VAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAUtils.h; path = Utils/VAUtils.h; sourceTree = "<group>"; };
 		367279671B162CB90003B81C /* VAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VAUtils.m; path = Utils/VAUtils.m; sourceTree = "<group>"; };
 		3672796C1B162CFF0003B81C /* VoiceAnimals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceAnimals-Prefix.pch"; sourceTree = "<group>"; };
@@ -171,6 +187,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364D3EE71B19C4D400BB7801 /* SystemConfiguration.framework in Frameworks */,
+				364D3EE51B19C4C800BB7801 /* AudioToolbox.framework in Frameworks */,
 				36CCD9A51B197F3C009D7D46 /* CoreGraphics.framework in Frameworks */,
 				36CCD9A31B197F36009D7D46 /* QuartzCore.framework in Frameworks */,
 				36CCD97C1B197CD0009D7D46 /* UIKit.framework in Frameworks */,
@@ -221,8 +239,6 @@
 				367279601B162C600003B81C /* ViewControllers */,
 				36353CE11B162507005DEF4F /* AppDelegate.h */,
 				36353CE21B162507005DEF4F /* AppDelegate.m */,
-				36353CE41B162507005DEF4F /* ViewController.h */,
-				36353CE51B162507005DEF4F /* ViewController.m */,
 				36353CE71B162507005DEF4F /* Main.storyboard */,
 				36353CEA1B162507005DEF4F /* Images.xcassets */,
 				36353CEC1B162507005DEF4F /* LaunchScreen.xib */,
@@ -258,9 +274,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		364D3EDA1B19C24500BB7801 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				364D3EDB1B19C2A500BB7801 /* EECollectionFlowLayout.h */,
+				364D3EDC1B19C2A500BB7801 /* EECollectionFlowLayout.m */,
+				364D3EDD1B19C2A500BB7801 /* WWCollectionViewCell.h */,
+				364D3EDE1B19C2A500BB7801 /* WWCollectionViewCell.m */,
+				364D3EE11B19C41400BB7801 /* VACollectionView.h */,
+				364D3EE21B19C41400BB7801 /* VACollectionView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		367279601B162C600003B81C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				364D3EDA1B19C24500BB7801 /* Views */,
 				3672796D1B162D410003B81C /* VAMainViewController.h */,
 				3672796E1B162D410003B81C /* VAMainViewController.m */,
 			);
@@ -273,6 +303,8 @@
 				36CCD94D1B197B25009D7D46 /* FancyTabbarMenu */,
 				36CCD94A1B197B1D009D7D46 /* VACommonViewController.h */,
 				36CCD94B1B197B1D009D7D46 /* VACommonViewController.m */,
+				364D3EEE1B19C8DC00BB7801 /* EMAudioController.h */,
+				364D3EEF1B19C8DC00BB7801 /* EMAudioController.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -356,6 +388,8 @@
 		36CCD99F1B197D5D009D7D46 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				364D3EEB1B19C54F00BB7801 /* UIView+Animation.h */,
+				364D3EEC1B19C54F00BB7801 /* UIView+Animation.m */,
 				36CCD97D1B197D57009D7D46 /* NSData+Util.h */,
 				36CCD97E1B197D57009D7D46 /* NSData+Util.m */,
 				36CCD97F1B197D57009D7D46 /* NSDate+Util.h */,
@@ -386,6 +420,8 @@
 		36CCD9A11B197F11009D7D46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				364D3EE61B19C4D400BB7801 /* SystemConfiguration.framework */,
+				364D3EE41B19C4C800BB7801 /* AudioToolbox.framework */,
 				36CCD9A41B197F3C009D7D46 /* CoreGraphics.framework */,
 				36CCD9A21B197F36009D7D46 /* QuartzCore.framework */,
 				36CCD97B1B197CD0009D7D46 /* UIKit.framework */,
@@ -488,6 +524,11 @@
 				TargetAttributes = {
 					36353CD91B162507005DEF4F = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					36353CF21B162507005DEF4F = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -559,10 +600,11 @@
 				3672796F1B162D410003B81C /* VAMainViewController.m in Sources */,
 				36CCD9BD1B19811C009D7D46 /* FAKIonIcons.m in Sources */,
 				367279681B162CB90003B81C /* VAUtils.m in Sources */,
+				364D3EE31B19C41400BB7801 /* VACollectionView.m in Sources */,
 				36CCD9941B197D57009D7D46 /* NSData+Util.m in Sources */,
 				36CCD9971B197D57009D7D46 /* NSString+Util.m in Sources */,
-				36353CE61B162507005DEF4F /* ViewController.m in Sources */,
 				36353CE31B162507005DEF4F /* AppDelegate.m in Sources */,
+				364D3EDF1B19C2A500BB7801 /* EECollectionFlowLayout.m in Sources */,
 				36CCD95A1B197B3D009D7D46 /* UIView+Screenshot.m in Sources */,
 				36CCD94C1B197B1D009D7D46 /* VACommonViewController.m in Sources */,
 				36CCD9961B197D57009D7D46 /* NSDictionary+NotNullValue.m in Sources */,
@@ -570,11 +612,13 @@
 				36CCD9BC1B19811C009D7D46 /* FAKIcon.m in Sources */,
 				36CCD99B1B197D57009D7D46 /* UIImage+RoundedCorner.m in Sources */,
 				36CCD9591B197B3D009D7D46 /* UIImage+ImageEffects.m in Sources */,
+				364D3EED1B19C54F00BB7801 /* UIView+Animation.m in Sources */,
 				36CCD9951B197D57009D7D46 /* NSDate+Util.m in Sources */,
 				36CCD9991B197D57009D7D46 /* UIImage+Alpha.m in Sources */,
 				36CCD99E1B197D57009D7D46 /* UIView+Util.m in Sources */,
 				36CCD9581B197B3D009D7D46 /* FancyTabBar.m in Sources */,
 				36CCD9571B197B3D009D7D46 /* Coordinate.m in Sources */,
+				364D3EF01B19C8DC00BB7801 /* EMAudioController.m in Sources */,
 				36CCD9BA1B19811C009D7D46 /* FAKFontAwesome.m in Sources */,
 				36CCD9A91B198100009D7D46 /* BFPaperButton.m in Sources */,
 				36CCD9BB1B19811C009D7D46 /* FAKFoundationIcons.m in Sources */,
@@ -582,6 +626,7 @@
 				36CCD99A1B197D57009D7D46 /* UIImage+Resize.m in Sources */,
 				36353CE01B162507005DEF4F /* main.m in Sources */,
 				36CCD9BE1B19811C009D7D46 /* FAKZocial.m in Sources */,
+				364D3EE01B19C2A500BB7801 /* WWCollectionViewCell.m in Sources */,
 				36CCD9C61B198159009D7D46 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
