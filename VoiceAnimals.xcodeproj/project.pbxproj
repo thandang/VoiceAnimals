@@ -15,8 +15,52 @@
 		36353CEE1B162507005DEF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36353CEC1B162507005DEF4F /* LaunchScreen.xib */; };
 		36353CFA1B162507005DEF4F /* VoiceAnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */; };
 		367279681B162CB90003B81C /* VAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 367279671B162CB90003B81C /* VAUtils.m */; };
-		3672796B1B162CE10003B81C /* VACommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3672796A1B162CE10003B81C /* VACommonViewController.m */; };
 		3672796F1B162D410003B81C /* VAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3672796E1B162D410003B81C /* VAMainViewController.m */; };
+		36CCD94C1B197B1D009D7D46 /* VACommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD94B1B197B1D009D7D46 /* VACommonViewController.m */; };
+		36CCD9571B197B3D009D7D46 /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD94F1B197B3D009D7D46 /* Coordinate.m */; };
+		36CCD9581B197B3D009D7D46 /* FancyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9511B197B3D009D7D46 /* FancyTabBar.m */; };
+		36CCD9591B197B3D009D7D46 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9541B197B3D009D7D46 /* UIImage+ImageEffects.m */; };
+		36CCD95A1B197B3D009D7D46 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9561B197B3D009D7D46 /* UIView+Screenshot.m */; };
+		36CCD9621B197C11009D7D46 /* NeoSansStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD95D1B197C11009D7D46 /* NeoSansStd-Light.otf */; };
+		36CCD9631B197C11009D7D46 /* NeoSansStd-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD95E1B197C11009D7D46 /* NeoSansStd-LightItalic.otf */; };
+		36CCD9641B197C11009D7D46 /* NeoSansStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD95F1B197C11009D7D46 /* NeoSansStd-Medium.otf */; };
+		36CCD9651B197C11009D7D46 /* NeoSansStd-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9601B197C11009D7D46 /* NeoSansStd-MediumItalic.otf */; };
+		36CCD9661B197C11009D7D46 /* NeoSansStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9611B197C11009D7D46 /* NeoSansStd-Regular.otf */; };
+		36CCD96E1B197C1F009D7D46 /* tieng_bo_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9671B197C1F009D7D46 /* tieng_bo_keu.mp3 */; };
+		36CCD96F1B197C1F009D7D46 /* tieng_chim_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9681B197C1F009D7D46 /* tieng_chim_keu.mp3 */; };
+		36CCD9701B197C1F009D7D46 /* tieng_chim_keu2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9691B197C1F009D7D46 /* tieng_chim_keu2.mp3 */; };
+		36CCD9711B197C1F009D7D46 /* tieng_cho_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD96A1B197C1F009D7D46 /* tieng_cho_keu.mp3 */; };
+		36CCD9721B197C1F009D7D46 /* tieng_de_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD96B1B197C1F009D7D46 /* tieng_de_keu.mp3 */; };
+		36CCD9731B197C1F009D7D46 /* tieng_ech_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD96C1B197C1F009D7D46 /* tieng_ech_keu.mp3 */; };
+		36CCD9741B197C1F009D7D46 /* tieng_meo_keu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD96D1B197C1F009D7D46 /* tieng_meo_keu.mp3 */; };
+		36CCD9761B197CBE009D7D46 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD9751B197CBE009D7D46 /* iAd.framework */; };
+		36CCD9781B197CC6009D7D46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD9771B197CC6009D7D46 /* AVFoundation.framework */; };
+		36CCD97A1B197CCB009D7D46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD9791B197CCB009D7D46 /* Foundation.framework */; };
+		36CCD97C1B197CD0009D7D46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD97B1B197CD0009D7D46 /* UIKit.framework */; };
+		36CCD9941B197D57009D7D46 /* NSData+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD97E1B197D57009D7D46 /* NSData+Util.m */; };
+		36CCD9951B197D57009D7D46 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9801B197D57009D7D46 /* NSDate+Util.m */; };
+		36CCD9961B197D57009D7D46 /* NSDictionary+NotNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9821B197D57009D7D46 /* NSDictionary+NotNullValue.m */; };
+		36CCD9971B197D57009D7D46 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9841B197D57009D7D46 /* NSString+Util.m */; };
+		36CCD9981B197D57009D7D46 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9871B197D57009D7D46 /* UIColor+BFPaperColors.m */; };
+		36CCD9991B197D57009D7D46 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9891B197D57009D7D46 /* UIImage+Alpha.m */; };
+		36CCD99A1B197D57009D7D46 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD98B1B197D57009D7D46 /* UIImage+Resize.m */; };
+		36CCD99B1B197D57009D7D46 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD98D1B197D57009D7D46 /* UIImage+RoundedCorner.m */; };
+		36CCD99C1B197D57009D7D46 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD98F1B197D57009D7D46 /* UIImage+Util.m */; };
+		36CCD99D1B197D57009D7D46 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9911B197D57009D7D46 /* UILabel+DynamicHeight.m */; };
+		36CCD99E1B197D57009D7D46 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9931B197D57009D7D46 /* UIView+Util.m */; };
+		36CCD9A31B197F36009D7D46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD9A21B197F36009D7D46 /* QuartzCore.framework */; };
+		36CCD9A51B197F3C009D7D46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD9A41B197F3C009D7D46 /* CoreGraphics.framework */; };
+		36CCD9A91B198100009D7D46 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9A81B198100009D7D46 /* BFPaperButton.m */; };
+		36CCD9BA1B19811C009D7D46 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9AC1B19811C009D7D46 /* FAKFontAwesome.m */; };
+		36CCD9BB1B19811C009D7D46 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9AE1B19811C009D7D46 /* FAKFoundationIcons.m */; };
+		36CCD9BC1B19811C009D7D46 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9B01B19811C009D7D46 /* FAKIcon.m */; };
+		36CCD9BD1B19811C009D7D46 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9B21B19811C009D7D46 /* FAKIonIcons.m */; };
+		36CCD9BE1B19811C009D7D46 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9B41B19811C009D7D46 /* FAKZocial.m */; };
+		36CCD9BF1B19811C009D7D46 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9B51B19811C009D7D46 /* FontAwesome.otf */; };
+		36CCD9C01B19811C009D7D46 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9B71B19811C009D7D46 /* foundation-icons.ttf */; };
+		36CCD9C11B19811C009D7D46 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9B81B19811C009D7D46 /* ionicons.ttf */; };
+		36CCD9C21B19811C009D7D46 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36CCD9B91B19811C009D7D46 /* zocial-regular-webfont.ttf */; };
+		36CCD9C61B198159009D7D46 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCD9C51B198159009D7D46 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +89,81 @@
 		36353CF91B162507005DEF4F /* VoiceAnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceAnimalsTests.m; sourceTree = "<group>"; };
 		367279661B162CB90003B81C /* VAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAUtils.h; path = Utils/VAUtils.h; sourceTree = "<group>"; };
 		367279671B162CB90003B81C /* VAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VAUtils.m; path = Utils/VAUtils.m; sourceTree = "<group>"; };
-		367279691B162CE10003B81C /* VACommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VACommonViewController.h; sourceTree = "<group>"; };
-		3672796A1B162CE10003B81C /* VACommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VACommonViewController.m; sourceTree = "<group>"; };
 		3672796C1B162CFF0003B81C /* VoiceAnimals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceAnimals-Prefix.pch"; sourceTree = "<group>"; };
 		3672796D1B162D410003B81C /* VAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VAMainViewController.h; path = ViewControllers/VAMainViewController.h; sourceTree = "<group>"; };
 		3672796E1B162D410003B81C /* VAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VAMainViewController.m; path = ViewControllers/VAMainViewController.m; sourceTree = "<group>"; };
+		36CCD94A1B197B1D009D7D46 /* VACommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VACommonViewController.h; path = Components/VACommonViewController.h; sourceTree = "<group>"; };
+		36CCD94B1B197B1D009D7D46 /* VACommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VACommonViewController.m; path = Components/VACommonViewController.m; sourceTree = "<group>"; };
+		36CCD94E1B197B3D009D7D46 /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinate.h; path = Components/FancyTabbarMenu/Coordinate.h; sourceTree = "<group>"; };
+		36CCD94F1B197B3D009D7D46 /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coordinate.m; path = Components/FancyTabbarMenu/Coordinate.m; sourceTree = "<group>"; };
+		36CCD9501B197B3D009D7D46 /* FancyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FancyTabBar.h; path = Components/FancyTabbarMenu/FancyTabBar.h; sourceTree = "<group>"; };
+		36CCD9511B197B3D009D7D46 /* FancyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FancyTabBar.m; path = Components/FancyTabbarMenu/FancyTabBar.m; sourceTree = "<group>"; };
+		36CCD9521B197B3D009D7D46 /* FancyTabBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FancyTabBarDelegate.h; path = Components/FancyTabbarMenu/FancyTabBarDelegate.h; sourceTree = "<group>"; };
+		36CCD9531B197B3D009D7D46 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Components/FancyTabbarMenu/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		36CCD9541B197B3D009D7D46 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Components/FancyTabbarMenu/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		36CCD9551B197B3D009D7D46 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Screenshot.h"; path = "Components/FancyTabbarMenu/UIView+Screenshot.h"; sourceTree = "<group>"; };
+		36CCD9561B197B3D009D7D46 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Screenshot.m"; path = "Components/FancyTabbarMenu/UIView+Screenshot.m"; sourceTree = "<group>"; };
+		36CCD95D1B197C11009D7D46 /* NeoSansStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansStd-Light.otf"; path = "Resources/Fonts/NeoSansStd-Light.otf"; sourceTree = "<group>"; };
+		36CCD95E1B197C11009D7D46 /* NeoSansStd-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansStd-LightItalic.otf"; path = "Resources/Fonts/NeoSansStd-LightItalic.otf"; sourceTree = "<group>"; };
+		36CCD95F1B197C11009D7D46 /* NeoSansStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansStd-Medium.otf"; path = "Resources/Fonts/NeoSansStd-Medium.otf"; sourceTree = "<group>"; };
+		36CCD9601B197C11009D7D46 /* NeoSansStd-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansStd-MediumItalic.otf"; path = "Resources/Fonts/NeoSansStd-MediumItalic.otf"; sourceTree = "<group>"; };
+		36CCD9611B197C11009D7D46 /* NeoSansStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansStd-Regular.otf"; path = "Resources/Fonts/NeoSansStd-Regular.otf"; sourceTree = "<group>"; };
+		36CCD9671B197C1F009D7D46 /* tieng_bo_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_bo_keu.mp3; path = Resources/Voices/tieng_bo_keu.mp3; sourceTree = "<group>"; };
+		36CCD9681B197C1F009D7D46 /* tieng_chim_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_chim_keu.mp3; path = Resources/Voices/tieng_chim_keu.mp3; sourceTree = "<group>"; };
+		36CCD9691B197C1F009D7D46 /* tieng_chim_keu2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_chim_keu2.mp3; path = Resources/Voices/tieng_chim_keu2.mp3; sourceTree = "<group>"; };
+		36CCD96A1B197C1F009D7D46 /* tieng_cho_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_cho_keu.mp3; path = Resources/Voices/tieng_cho_keu.mp3; sourceTree = "<group>"; };
+		36CCD96B1B197C1F009D7D46 /* tieng_de_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_de_keu.mp3; path = Resources/Voices/tieng_de_keu.mp3; sourceTree = "<group>"; };
+		36CCD96C1B197C1F009D7D46 /* tieng_ech_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_ech_keu.mp3; path = Resources/Voices/tieng_ech_keu.mp3; sourceTree = "<group>"; };
+		36CCD96D1B197C1F009D7D46 /* tieng_meo_keu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tieng_meo_keu.mp3; path = Resources/Voices/tieng_meo_keu.mp3; sourceTree = "<group>"; };
+		36CCD9751B197CBE009D7D46 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		36CCD9771B197CC6009D7D46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		36CCD9791B197CCB009D7D46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36CCD97B1B197CD0009D7D46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36CCD97D1B197D57009D7D46 /* NSData+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Util.h"; path = "Utils/NSData+Util.h"; sourceTree = "<group>"; };
+		36CCD97E1B197D57009D7D46 /* NSData+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Util.m"; path = "Utils/NSData+Util.m"; sourceTree = "<group>"; };
+		36CCD97F1B197D57009D7D46 /* NSDate+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Util.h"; path = "Utils/NSDate+Util.h"; sourceTree = "<group>"; };
+		36CCD9801B197D57009D7D46 /* NSDate+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Util.m"; path = "Utils/NSDate+Util.m"; sourceTree = "<group>"; };
+		36CCD9811B197D57009D7D46 /* NSDictionary+NotNullValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+NotNullValue.h"; path = "Utils/NSDictionary+NotNullValue.h"; sourceTree = "<group>"; };
+		36CCD9821B197D57009D7D46 /* NSDictionary+NotNullValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+NotNullValue.m"; path = "Utils/NSDictionary+NotNullValue.m"; sourceTree = "<group>"; };
+		36CCD9831B197D57009D7D46 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Util.h"; path = "Utils/NSString+Util.h"; sourceTree = "<group>"; };
+		36CCD9841B197D57009D7D46 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Util.m"; path = "Utils/NSString+Util.m"; sourceTree = "<group>"; };
+		36CCD9851B197D57009D7D46 /* SDMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDMConstants.h; path = Utils/SDMConstants.h; sourceTree = "<group>"; };
+		36CCD9861B197D57009D7D46 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+BFPaperColors.h"; path = "Utils/UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		36CCD9871B197D57009D7D46 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BFPaperColors.m"; path = "Utils/UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		36CCD9881B197D57009D7D46 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Alpha.h"; path = "Utils/UIImage+Alpha.h"; sourceTree = "<group>"; };
+		36CCD9891B197D57009D7D46 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Alpha.m"; path = "Utils/UIImage+Alpha.m"; sourceTree = "<group>"; };
+		36CCD98A1B197D57009D7D46 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "Utils/UIImage+Resize.h"; sourceTree = "<group>"; };
+		36CCD98B1B197D57009D7D46 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Utils/UIImage+Resize.m"; sourceTree = "<group>"; };
+		36CCD98C1B197D57009D7D46 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "Utils/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		36CCD98D1B197D57009D7D46 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "Utils/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		36CCD98E1B197D57009D7D46 /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Util.h"; path = "Utils/UIImage+Util.h"; sourceTree = "<group>"; };
+		36CCD98F1B197D57009D7D46 /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Util.m"; path = "Utils/UIImage+Util.m"; sourceTree = "<group>"; };
+		36CCD9901B197D57009D7D46 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+DynamicHeight.h"; path = "Utils/UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
+		36CCD9911B197D57009D7D46 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+DynamicHeight.m"; path = "Utils/UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
+		36CCD9921B197D57009D7D46 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Util.h"; path = "Utils/UIView+Util.h"; sourceTree = "<group>"; };
+		36CCD9931B197D57009D7D46 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Util.m"; path = "Utils/UIView+Util.m"; sourceTree = "<group>"; };
+		36CCD9A01B197DEB009D7D46 /* VAConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VAConstants.h; path = Utils/VAConstants.h; sourceTree = "<group>"; };
+		36CCD9A21B197F36009D7D46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		36CCD9A41B197F3C009D7D46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		36CCD9A71B198100009D7D46 /* BFPaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFPaperButton.h; path = Libraries/BFPaperButton.h; sourceTree = "<group>"; };
+		36CCD9A81B198100009D7D46 /* BFPaperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFPaperButton.m; path = Libraries/BFPaperButton.m; sourceTree = "<group>"; };
+		36CCD9AB1B19811C009D7D46 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKFontAwesome.h; path = Libraries/FontAwesomeKit/FAKFontAwesome.h; sourceTree = "<group>"; };
+		36CCD9AC1B19811C009D7D46 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = Libraries/FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
+		36CCD9AD1B19811C009D7D46 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKFoundationIcons.h; path = Libraries/FontAwesomeKit/FAKFoundationIcons.h; sourceTree = "<group>"; };
+		36CCD9AE1B19811C009D7D46 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKFoundationIcons.m; path = Libraries/FontAwesomeKit/FAKFoundationIcons.m; sourceTree = "<group>"; };
+		36CCD9AF1B19811C009D7D46 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = Libraries/FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
+		36CCD9B01B19811C009D7D46 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = Libraries/FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
+		36CCD9B11B19811C009D7D46 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = Libraries/FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
+		36CCD9B21B19811C009D7D46 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = Libraries/FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
+		36CCD9B31B19811C009D7D46 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKZocial.h; path = Libraries/FontAwesomeKit/FAKZocial.h; sourceTree = "<group>"; };
+		36CCD9B41B19811C009D7D46 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKZocial.m; path = Libraries/FontAwesomeKit/FAKZocial.m; sourceTree = "<group>"; };
+		36CCD9B51B19811C009D7D46 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = Libraries/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		36CCD9B61B19811C009D7D46 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FontAwesomeKit.h; path = Libraries/FontAwesomeKit/FontAwesomeKit.h; sourceTree = "<group>"; };
+		36CCD9B71B19811C009D7D46 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "Libraries/FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		36CCD9B81B19811C009D7D46 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = Libraries/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		36CCD9B91B19811C009D7D46 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "Libraries/FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		36CCD9C41B198159009D7D46 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libraries/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		36CCD9C51B198159009D7D46 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +171,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CCD9A51B197F3C009D7D46 /* CoreGraphics.framework in Frameworks */,
+				36CCD9A31B197F36009D7D46 /* QuartzCore.framework in Frameworks */,
+				36CCD97C1B197CD0009D7D46 /* UIKit.framework in Frameworks */,
+				36CCD97A1B197CCB009D7D46 /* Foundation.framework in Frameworks */,
+				36CCD9781B197CC6009D7D46 /* AVFoundation.framework in Frameworks */,
+				36CCD9761B197CBE009D7D46 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +193,7 @@
 		36353CD11B162507005DEF4F = {
 			isa = PBXGroup;
 			children = (
+				36CCD9A11B197F11009D7D46 /* Frameworks */,
 				36353CDC1B162507005DEF4F /* VoiceAnimals */,
 				36353CF61B162507005DEF4F /* VoiceAnimalsTests */,
 				36353CDB1B162507005DEF4F /* Products */,
@@ -91,6 +212,7 @@
 		36353CDC1B162507005DEF4F /* VoiceAnimals */ = {
 			isa = PBXGroup;
 			children = (
+				36CCD9A61B1980E6009D7D46 /* Libraries */,
 				367279651B162C910003B81C /* Resources */,
 				367279641B162C810003B81C /* Models */,
 				367279631B162C760003B81C /* ThirdParties */,
@@ -148,8 +270,9 @@
 		367279611B162C690003B81C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				367279691B162CE10003B81C /* VACommonViewController.h */,
-				3672796A1B162CE10003B81C /* VACommonViewController.m */,
+				36CCD94D1B197B25009D7D46 /* FancyTabbarMenu */,
+				36CCD94A1B197B1D009D7D46 /* VACommonViewController.h */,
+				36CCD94B1B197B1D009D7D46 /* VACommonViewController.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -157,8 +280,10 @@
 		367279621B162C6F0003B81C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				36CCD99F1B197D5D009D7D46 /* Categories */,
 				367279661B162CB90003B81C /* VAUtils.h */,
 				367279671B162CB90003B81C /* VAUtils.m */,
+				36CCD9A01B197DEB009D7D46 /* VAConstants.h */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -180,8 +305,137 @@
 		367279651B162C910003B81C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				36CCD95C1B197B6B009D7D46 /* Voices */,
+				36CCD95B1B197B65009D7D46 /* Fonts */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		36CCD94D1B197B25009D7D46 /* FancyTabbarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD94E1B197B3D009D7D46 /* Coordinate.h */,
+				36CCD94F1B197B3D009D7D46 /* Coordinate.m */,
+				36CCD9501B197B3D009D7D46 /* FancyTabBar.h */,
+				36CCD9511B197B3D009D7D46 /* FancyTabBar.m */,
+				36CCD9521B197B3D009D7D46 /* FancyTabBarDelegate.h */,
+				36CCD9531B197B3D009D7D46 /* UIImage+ImageEffects.h */,
+				36CCD9541B197B3D009D7D46 /* UIImage+ImageEffects.m */,
+				36CCD9551B197B3D009D7D46 /* UIView+Screenshot.h */,
+				36CCD9561B197B3D009D7D46 /* UIView+Screenshot.m */,
+			);
+			name = FancyTabbarMenu;
+			sourceTree = "<group>";
+		};
+		36CCD95B1B197B65009D7D46 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD95D1B197C11009D7D46 /* NeoSansStd-Light.otf */,
+				36CCD95E1B197C11009D7D46 /* NeoSansStd-LightItalic.otf */,
+				36CCD95F1B197C11009D7D46 /* NeoSansStd-Medium.otf */,
+				36CCD9601B197C11009D7D46 /* NeoSansStd-MediumItalic.otf */,
+				36CCD9611B197C11009D7D46 /* NeoSansStd-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		36CCD95C1B197B6B009D7D46 /* Voices */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD9671B197C1F009D7D46 /* tieng_bo_keu.mp3 */,
+				36CCD9681B197C1F009D7D46 /* tieng_chim_keu.mp3 */,
+				36CCD9691B197C1F009D7D46 /* tieng_chim_keu2.mp3 */,
+				36CCD96A1B197C1F009D7D46 /* tieng_cho_keu.mp3 */,
+				36CCD96B1B197C1F009D7D46 /* tieng_de_keu.mp3 */,
+				36CCD96C1B197C1F009D7D46 /* tieng_ech_keu.mp3 */,
+				36CCD96D1B197C1F009D7D46 /* tieng_meo_keu.mp3 */,
+			);
+			name = Voices;
+			sourceTree = "<group>";
+		};
+		36CCD99F1B197D5D009D7D46 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD97D1B197D57009D7D46 /* NSData+Util.h */,
+				36CCD97E1B197D57009D7D46 /* NSData+Util.m */,
+				36CCD97F1B197D57009D7D46 /* NSDate+Util.h */,
+				36CCD9801B197D57009D7D46 /* NSDate+Util.m */,
+				36CCD9811B197D57009D7D46 /* NSDictionary+NotNullValue.h */,
+				36CCD9821B197D57009D7D46 /* NSDictionary+NotNullValue.m */,
+				36CCD9831B197D57009D7D46 /* NSString+Util.h */,
+				36CCD9841B197D57009D7D46 /* NSString+Util.m */,
+				36CCD9851B197D57009D7D46 /* SDMConstants.h */,
+				36CCD9861B197D57009D7D46 /* UIColor+BFPaperColors.h */,
+				36CCD9871B197D57009D7D46 /* UIColor+BFPaperColors.m */,
+				36CCD9881B197D57009D7D46 /* UIImage+Alpha.h */,
+				36CCD9891B197D57009D7D46 /* UIImage+Alpha.m */,
+				36CCD98A1B197D57009D7D46 /* UIImage+Resize.h */,
+				36CCD98B1B197D57009D7D46 /* UIImage+Resize.m */,
+				36CCD98C1B197D57009D7D46 /* UIImage+RoundedCorner.h */,
+				36CCD98D1B197D57009D7D46 /* UIImage+RoundedCorner.m */,
+				36CCD98E1B197D57009D7D46 /* UIImage+Util.h */,
+				36CCD98F1B197D57009D7D46 /* UIImage+Util.m */,
+				36CCD9901B197D57009D7D46 /* UILabel+DynamicHeight.h */,
+				36CCD9911B197D57009D7D46 /* UILabel+DynamicHeight.m */,
+				36CCD9921B197D57009D7D46 /* UIView+Util.h */,
+				36CCD9931B197D57009D7D46 /* UIView+Util.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		36CCD9A11B197F11009D7D46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD9A41B197F3C009D7D46 /* CoreGraphics.framework */,
+				36CCD9A21B197F36009D7D46 /* QuartzCore.framework */,
+				36CCD97B1B197CD0009D7D46 /* UIKit.framework */,
+				36CCD9791B197CCB009D7D46 /* Foundation.framework */,
+				36CCD9771B197CC6009D7D46 /* AVFoundation.framework */,
+				36CCD9751B197CBE009D7D46 /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CCD9A61B1980E6009D7D46 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD9C31B198125009D7D46 /* MBProgressHUD */,
+				36CCD9AA1B198102009D7D46 /* FontAwesomeKit */,
+				36CCD9A71B198100009D7D46 /* BFPaperButton.h */,
+				36CCD9A81B198100009D7D46 /* BFPaperButton.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		36CCD9AA1B198102009D7D46 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD9AB1B19811C009D7D46 /* FAKFontAwesome.h */,
+				36CCD9AC1B19811C009D7D46 /* FAKFontAwesome.m */,
+				36CCD9AD1B19811C009D7D46 /* FAKFoundationIcons.h */,
+				36CCD9AE1B19811C009D7D46 /* FAKFoundationIcons.m */,
+				36CCD9AF1B19811C009D7D46 /* FAKIcon.h */,
+				36CCD9B01B19811C009D7D46 /* FAKIcon.m */,
+				36CCD9B11B19811C009D7D46 /* FAKIonIcons.h */,
+				36CCD9B21B19811C009D7D46 /* FAKIonIcons.m */,
+				36CCD9B31B19811C009D7D46 /* FAKZocial.h */,
+				36CCD9B41B19811C009D7D46 /* FAKZocial.m */,
+				36CCD9B51B19811C009D7D46 /* FontAwesome.otf */,
+				36CCD9B61B19811C009D7D46 /* FontAwesomeKit.h */,
+				36CCD9B71B19811C009D7D46 /* foundation-icons.ttf */,
+				36CCD9B81B19811C009D7D46 /* ionicons.ttf */,
+				36CCD9B91B19811C009D7D46 /* zocial-regular-webfont.ttf */,
+			);
+			name = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+		36CCD9C31B198125009D7D46 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD9C41B198159009D7D46 /* MBProgressHUD.h */,
+				36CCD9C51B198159009D7D46 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +519,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CCD9C21B19811C009D7D46 /* zocial-regular-webfont.ttf in Resources */,
 				36353CE91B162507005DEF4F /* Main.storyboard in Resources */,
 				36353CEE1B162507005DEF4F /* LaunchScreen.xib in Resources */,
+				36CCD9721B197C1F009D7D46 /* tieng_de_keu.mp3 in Resources */,
+				36CCD9651B197C11009D7D46 /* NeoSansStd-MediumItalic.otf in Resources */,
+				36CCD9741B197C1F009D7D46 /* tieng_meo_keu.mp3 in Resources */,
+				36CCD9711B197C1F009D7D46 /* tieng_cho_keu.mp3 in Resources */,
+				36CCD9C11B19811C009D7D46 /* ionicons.ttf in Resources */,
+				36CCD9C01B19811C009D7D46 /* foundation-icons.ttf in Resources */,
+				36CCD9641B197C11009D7D46 /* NeoSansStd-Medium.otf in Resources */,
+				36CCD9621B197C11009D7D46 /* NeoSansStd-Light.otf in Resources */,
+				36CCD96F1B197C1F009D7D46 /* tieng_chim_keu.mp3 in Resources */,
+				36CCD9701B197C1F009D7D46 /* tieng_chim_keu2.mp3 in Resources */,
+				36CCD9731B197C1F009D7D46 /* tieng_ech_keu.mp3 in Resources */,
+				36CCD96E1B197C1F009D7D46 /* tieng_bo_keu.mp3 in Resources */,
+				36CCD9631B197C11009D7D46 /* NeoSansStd-LightItalic.otf in Resources */,
+				36CCD9661B197C11009D7D46 /* NeoSansStd-Regular.otf in Resources */,
+				36CCD9BF1B19811C009D7D46 /* FontAwesome.otf in Resources */,
 				36353CEB1B162507005DEF4F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +555,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CCD99C1B197D57009D7D46 /* UIImage+Util.m in Sources */,
 				3672796F1B162D410003B81C /* VAMainViewController.m in Sources */,
+				36CCD9BD1B19811C009D7D46 /* FAKIonIcons.m in Sources */,
 				367279681B162CB90003B81C /* VAUtils.m in Sources */,
-				3672796B1B162CE10003B81C /* VACommonViewController.m in Sources */,
+				36CCD9941B197D57009D7D46 /* NSData+Util.m in Sources */,
+				36CCD9971B197D57009D7D46 /* NSString+Util.m in Sources */,
 				36353CE61B162507005DEF4F /* ViewController.m in Sources */,
 				36353CE31B162507005DEF4F /* AppDelegate.m in Sources */,
+				36CCD95A1B197B3D009D7D46 /* UIView+Screenshot.m in Sources */,
+				36CCD94C1B197B1D009D7D46 /* VACommonViewController.m in Sources */,
+				36CCD9961B197D57009D7D46 /* NSDictionary+NotNullValue.m in Sources */,
+				36CCD9981B197D57009D7D46 /* UIColor+BFPaperColors.m in Sources */,
+				36CCD9BC1B19811C009D7D46 /* FAKIcon.m in Sources */,
+				36CCD99B1B197D57009D7D46 /* UIImage+RoundedCorner.m in Sources */,
+				36CCD9591B197B3D009D7D46 /* UIImage+ImageEffects.m in Sources */,
+				36CCD9951B197D57009D7D46 /* NSDate+Util.m in Sources */,
+				36CCD9991B197D57009D7D46 /* UIImage+Alpha.m in Sources */,
+				36CCD99E1B197D57009D7D46 /* UIView+Util.m in Sources */,
+				36CCD9581B197B3D009D7D46 /* FancyTabBar.m in Sources */,
+				36CCD9571B197B3D009D7D46 /* Coordinate.m in Sources */,
+				36CCD9BA1B19811C009D7D46 /* FAKFontAwesome.m in Sources */,
+				36CCD9A91B198100009D7D46 /* BFPaperButton.m in Sources */,
+				36CCD9BB1B19811C009D7D46 /* FAKFoundationIcons.m in Sources */,
+				36CCD99D1B197D57009D7D46 /* UILabel+DynamicHeight.m in Sources */,
+				36CCD99A1B197D57009D7D46 /* UIImage+Resize.m in Sources */,
 				36353CE01B162507005DEF4F /* main.m in Sources */,
+				36CCD9BE1B19811C009D7D46 /* FAKZocial.m in Sources */,
+				36CCD9C61B198159009D7D46 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
